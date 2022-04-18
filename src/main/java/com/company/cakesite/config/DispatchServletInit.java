@@ -6,12 +6,12 @@ public class DispatchServletInit extends AbstractAnnotationConfigDispatcherServl
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return null;
+        return new Class<?>[]{WebApplicationBusinessConfig.class};
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{WebApplicationContextConfig.class};
+        return new Class<?>[]{WebApplicationContextConfig.class};
     }
 
     @Override
